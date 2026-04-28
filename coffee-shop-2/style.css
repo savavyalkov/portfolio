@@ -40,6 +40,35 @@ body {
     letter-spacing: 0.25em;
 }
 
+.burger-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.burger-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    transition: all 0.3s;
+}
+
+.burger-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.burger-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .topnav {
     display: flex;
     justify-content: center;
@@ -463,25 +492,48 @@ body {
 
     .topbar {
         padding: 18px 12px;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+    }
+
+    .burger-toggle {
+        display: flex;
+        order: 2;
+    }
+
+    .topnav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+
+    .topnav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .topbar-cta {
+        display: none;
     }
 
     .brand {
         font-size: 1.4rem;
     }
 
-    .topnav {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
     .topnav a {
-        font-size: 14px;
-    }
-
-    .topbar-cta {
-        padding: 10px 14px;
-        font-size: 13px;
+        font-size: 16px;
+        padding: 8px 0;
     }
 
     .hero {
