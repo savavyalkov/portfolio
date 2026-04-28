@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня Аромат - Лучший кофе в городе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="wrapper">
+            <div class="nav-content">
+                <h1 class="brand">АРОМАТ</h1>
+                <ul class="menu">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#coffee-menu">Меню</a></li>
+                    <li><a href="#story">История</a></li>
+                    <li><a href="#reservation">Бронь</a></li>
+                </ul>
+                <button class="mobile-toggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="wrapper">
+            <div class="hero-text">
+                <span class="hero-label">С 2016 года</span>
+                <h2>Каждая чашка —<br>это искусство</h2>
+                <p>Мы создаём незабываемые моменты через вкус настоящего кофе</p>
+                <div class="hero-buttons">
+                    <a href="#coffee-menu" class="btn-main">Наше основное меню</a>
+                    <a href="#reservation" class="btn-outline">Забронировать стол</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="benefits">
+        <div class="wrapper">
+            <div class="benefits-row">
+                <div class="benefit-box">
+                    <div class="benefit-num">01</div>
+                    <h3>Свежая обжарка</h3>
+                    <p>Обжариваем зёрна каждое утро на собственной ростерной</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-num">02</div>
+                    <h3>Мастера своего дела</h3>
+                    <p>Наши бариста — чемпионы национальных соревнований</p>
+                </div>
+                <div class="benefit-box">
+                    <div class="benefit-num">03</div>
+                    <h3>Уютное пространство</h3>
+                    <p>Идеальное место для работы, встреч и отдыха</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню кофе -->
+    <section id="coffee-menu" class="coffee-section">
+        <div class="wrapper">
+            <div class="section-header">
+                <h2>Наше основное меню</h2>
+            </div>
+
+            <div class="menu-categories">
+                <button class="cat-btn active" data-category="hot">Горячие напитки</button>
+                <button class="cat-btn" data-category="cold">Холодные напитки</button>
+                <button class="cat-btn" data-category="food">Еда</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Горячие напитки -->
+                <div class="category-content active" data-category="hot">
+                    <div class="menu-row">
+                        <div class="menu-card" data-item="espresso">
+                            <div class="menu-card-content">
+                                <h4>Эспрессо</h4>
+                                <p class="card-desc">Классический крепкий кофе</p>
+                                <div class="card-footer">
+                                    <span class="card-price">150₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="cappuccino">
+                            <div class="menu-card-content">
+                                <h4>Капучино</h4>
+                                <p class="card-desc">Эспрессо с молочной пенкой</p>
+                                <div class="card-footer">
+                                    <span class="card-price">220₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="latte">
+                            <div class="menu-card-content">
+                                <h4>Латте</h4>
+                                <p class="card-desc">Мягкий кофе с молоком</p>
+                                <div class="card-footer">
+                                    <span class="card-price">240₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="americano">
+                            <div class="menu-card-content">
+                                <h4>Американо</h4>
+                                <p class="card-desc">Эспрессо с горячей водой</p>
+                                <div class="card-footer">
+                                    <span class="card-price">180₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="raf">
+                            <div class="menu-card-content">
+                                <h4>Раф кофе</h4>
+                                <p class="card-desc">Кофе со сливками и ванилью</p>
+                                <div class="card-footer">
+                                    <span class="card-price">280₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="flatwhite">
+                            <div class="menu-card-content">
+                                <h4>Флэт Уайт</h4>
+                                <p class="card-desc">Двойной эспрессо с микропенкой</p>
+                                <div class="card-footer">
+                                    <span class="card-price">260₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Холодные напитки -->
+                <div class="category-content" data-category="cold">
+                    <div class="menu-row">
+                        <div class="menu-card" data-item="icelatte">
+                            <div class="menu-card-content">
+                                <h4>Айс Латте</h4>
+                                <p class="card-desc">Холодный латте со льдом</p>
+                                <div class="card-footer">
+                                    <span class="card-price">260₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="coldbrew">
+                            <div class="menu-card-content">
+                                <h4>Колд Брю</h4>
+                                <p class="card-desc">Кофе холодной экстракции</p>
+                                <div class="card-footer">
+                                    <span class="card-price">290₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="frappe">
+                            <div class="menu-card-content">
+                                <h4>Фраппе</h4>
+                                <p class="card-desc">Кофейный коктейль со льдом</p>
+                                <div class="card-footer">
+                                    <span class="card-price">310₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="lemonade">
+                            <div class="menu-card-content">
+                                <h4>Лимонад</h4>
+                                <p class="card-desc">Домашний лимонад</p>
+                                <div class="card-footer">
+                                    <span class="card-price">200₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Еда -->
+                <div class="category-content" data-category="food">
+                    <div class="menu-row">
+                        <div class="menu-card" data-item="croissant">
+                            <div class="menu-card-content">
+                                <h4>Круассан</h4>
+                                <p class="card-desc">Французская выпечка</p>
+                                <div class="card-footer">
+                                    <span class="card-price">150₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="cheesecake">
+                            <div class="menu-card-content">
+                                <h4>Чизкейк</h4>
+                                <p class="card-desc">Нежный творожный десерт</p>
+                                <div class="card-footer">
+                                    <span class="card-price">280₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="tiramisu">
+                            <div class="menu-card-content">
+                                <h4>Тирамису</h4>
+                                <p class="card-desc">Итальянский десерт с кофе</p>
+                                <div class="card-footer">
+                                    <span class="card-price">320₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" data-item="sandwich">
+                            <div class="menu-card-content">
+                                <h4>Сэндвич</h4>
+                                <p class="card-desc">С ветчиной, сыром и овощами</p>
+                                <div class="card-footer">
+                                    <span class="card-price">250₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- История -->
+    <section id="story" class="story-section">
+        <div class="wrapper">
+            <div class="story-grid">
+                <div class="story-image">
+                    <div class="img-box"></div>
+                </div>
+                <div class="story-content">
+                    <span class="story-tag">Наша история</span>
+                    <h2>10 лет любви к кофе</h2>
+                    <p>В 2016 году мы открыли маленькую кофейню с большой мечтой — делиться настоящим вкусом кофе с каждым гостем.</p>
+                    <p>Сегодня "Аромат" — это место, где встречаются друзья, рождаются идеи и начинается каждое утро тысяч москвичей.</p>
+                    <div class="story-stats">
+                        <div class="stat-box">
+                            <strong>30,000+</strong>
+                            <span>Довольных гостей</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>30+</strong>
+                            <span>Видов напитков</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>10</strong>
+                            <span>Лет на рынке</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="reservation" class="reservation-section">
+        <div class="wrapper">
+            <div class="reservation-box">
+                <div class="res-left">
+                    <h2>Забронируйте столик</h2>
+                    <p>Гарантируем вам лучшее место и свежий кофе</p>
+                    <ul class="res-features">
+                        <li>✓ Бесплатная отмена за 2 часа</li>
+                        <li>✓ Выбор любимого места</li>
+                        <li>✓ Приветственный напиток в подарок</li>
+                    </ul>
+                </div>
+                <div class="res-right">
+                    <form class="booking-form" id="bookForm">
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Дата</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Время</label>
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Количество гостей</label>
+                            <select required>
+                                <option value="">Выберите</option>
+                                <option value="1">1 гость</option>
+                                <option value="2">2 гостя</option>
+                                <option value="3">3 гостя</option>
+                                <option value="4">4 гостя</option>
+                                <option value="5">5+ гостей</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <div class="wrapper">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>АРОМАТ</h3>
+                    <p>Лучший кофе в городе с 2016 года</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (495) 123-45-67</p>
+                    <p>📧 info@aromat-coffee.ru</p>
+                    <p>📍 г. Москва, ул. Кофейная, 15</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <p>Понедельник - Воскресенье</p>
+                    <p>08:00 - 22:00</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">VK</a></p>
+                    <p><a href="#">Telegram</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Кофейня "Аромат". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

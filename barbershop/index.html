@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп Стиль</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">СТИЛЬ</div>
+            <button type="button" class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Услуги</a>
+                <a href="#masters">Мастера</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+                <a href="#booking" class="nav-cta">Записаться</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="hero-label">Барбершоп в центре города</p>
+                <h1>Стрижки, борода и уход, на которые хочется вернуться</h1>
+                <p class="hero-text">Мужские стрижки, оформление бороды и комфортная атмосфера. Запись онлайн без звонков и ожидания.</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary">Записаться онлайн</a>
+                    <a href="#services" class="btn btn-secondary">Посмотреть услуги</a>
+                </div>
+                <div class="hero-meta">
+                    <span><i class="fas fa-location-dot"></i> ул. Ленина, 14</span>
+                    <span><i class="fas fa-clock"></i> 10:00–22:00</span>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card-top">
+                    <span class="chip">4.9 / 5</span>
+                    <span class="chip chip-dark">152 отзыва</span>
+                </div>
+                <div class="hero-slots">
+                    <p class="slots-title">Ближайшие окна сегодня</p>
+                    <div class="slot-item">
+                        <strong>13:30</strong>
+                        <span>Артем • стрижка</span>
+                    </div>
+                    <div class="slot-item">
+                        <strong>16:00</strong>
+                        <span>Максим • борода</span>
+                    </div>
+                    <div class="slot-item">
+                        <strong>19:15</strong>
+                        <span>Илья • стрижка + борода</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-label">Услуги</p>
+                <h2>Популярные услуги и цены</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Мужская стрижка</h3>
+                    <p>Подбор формы, работа с машинкой и ножницами, укладка.</p>
+                    <strong>1 500 ₽</strong>
+                </article>
+                <article class="service-card">
+                    <h3>Стрижка + борода</h3>
+                    <p>Комплексный образ за один визит без спешки.</p>
+                    <strong>2 300 ₽</strong>
+                </article>
+                <article class="service-card">
+                    <h3>Оформление бороды</h3>
+                    <p>Контур, длина, уход и точная форма под лицо.</p>
+                    <strong>1 000 ₽</strong>
+                </article>
+                <article class="service-card">
+                    <h3>Камуфляж седины</h3>
+                    <p>Деликатное тонирование без резкого эффекта.</p>
+                    <strong>1 400 ₽</strong>
+                </article>
+            </div>
+            <div class="services-cta">
+                <a href="#booking" class="btn btn-primary">Выбрать услугу и записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="masters section" id="masters">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-label">Команда</p>
+                <h2>Мастера барбершопа</h2>
+            </div>
+            <div class="masters-grid">
+                <article class="master-card">
+                    <div class="master-photo artem">
+                        <img src="https://img.freepik.com/premium-photo/confident-tattooed-hairdresser-looking-camera_251859-6755.jpg?semt=ais_hybrid&w=740&q=80" alt="Артем, барбер">
+                    </div>
+                    <h3>Артем</h3>
+                    <p>Fade, crop, классика</p>
+                    <div class="master-meta">
+                        <span>6 лет опыта</span>
+                        <span>4.9 рейтинг</span>
+                    </div>
+                </article>
+                <article class="master-card">
+                    <div class="master-photo maxim">
+                        <img src="https://sravni-news-prod.storage.yandexcloud.net/uploads/2021/12/128044-tw0i438fqjyhbg9m56rn.jpg" alt="Максим, барбер">
+                    </div>
+                    <h3>Максим</h3>
+                    <p>Борода, уход, премиум-сервис</p>
+                    <div class="master-meta">
+                        <span>8 лет опыта</span>
+                        <span>5.0 рейтинг</span>
+                    </div>
+                </article>
+                <article class="master-card">
+                    <div class="master-photo ilya">
+                        <img src="https://img.freepik.com/premium-photo/barber-tools-portrait-man-hair-grooming-wellness-comb-beard-service-professional-crossed-arms-person-barbershop-hairdresser-parlor-haircare-beauty-styling_590464-368962.jpg?semt=ais_hybrid" alt="Илья, барбер">
+                    </div>
+                    <h3>Илья</h3>
+                    <p>Современные стрижки и укладки</p>
+                    <div class="master-meta">
+                        <span>5 лет опыта</span>
+                        <span>4.8 рейтинг</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="container about-grid">
+            <div>
+                <p class="section-label">Почему выбирают нас</p>
+                <h2>Без суеты, с точной записью и понятным сервисом</h2>
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item"><i class="fas fa-check"></i><span>Запись онлайн без звонков</span></div>
+                <div class="benefit-item"><i class="fas fa-check"></i><span>Понятные цены без сюрпризов</span></div>
+                <div class="benefit-item"><i class="fas fa-check"></i><span>Удобное расположение в центре</span></div>
+                <div class="benefit-item"><i class="fas fa-check"></i><span>Напоминание о визите заранее</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking section" id="booking">
+        <div class="container booking-grid">
+            <div>
+                <p class="section-label">Онлайн-запись</p>
+                <h2>Оставьте заявку и мы подтвердим удобное время</h2>
+                <p class="booking-text">Обычно отвечаем в течение 10 минут в рабочее время.</p>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <select required>
+                    <option value="">Выберите услугу</option>
+                    <option>Мужская стрижка</option>
+                    <option>Стрижка + борода</option>
+                    <option>Оформление бороды</option>
+                    <option>Камуфляж седины</option>
+                </select>
+                <select required>
+                    <option value="">Выберите мастера</option>
+                    <option>Артем</option>
+                    <option>Максим</option>
+                    <option>Илья</option>
+                </select>
+                <select required>
+                    <option value="">Выберите время</option>
+                    <option>13:30</option>
+                    <option>16:00</option>
+                    <option>19:15</option>
+                </select>
+                <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+                <p class="form-note">Подтверждаем запись обычно в течение 10 минут в рабочее время.</p>
+                <div class="form-success" id="formSuccess">Заявка отправлена. Мы скоро подтвердим запись.</div>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-card">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-location-dot"></i> ул. Ленина, 14</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                <p><i class="fas fa-clock"></i> Ежедневно 10:00–22:00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Барбершоп Стиль</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
