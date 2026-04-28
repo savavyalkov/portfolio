@@ -99,6 +99,7 @@ nav {
                 url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&h=1080&fit=crop') center/cover;
     position: relative;
     overflow: hidden;
+    padding-top: 80px;
 }
 
 .hero::before {
@@ -1030,6 +1031,96 @@ footer {
         padding-top: 5rem;
     }
 
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .burger {
+        display: block;
+        z-index: 2000;
+    }
+
+    .burger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active .line2 {
+        opacity: 0;
+    }
+
+    .burger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 8rem 0 4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-meta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-meta span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-results {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons-large {
+        flex-direction: column;
+    }
+
+    .cta-box,
+    .offer-box {
+        padding: 3rem 2rem;
+    }
+
+    .custom-offer .offer-box {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     nav {
         padding: 1rem;
@@ -1095,75 +1186,6 @@ footer {
 
     .container {
         padding: 0 1rem;
-    }
-}
-
-    .nav-links.active {
-        transform: translateX(0%);
-    }
-
-    .burger {
-        display: block;
-        z-index: 2000;
-    }
-
-    .burger.active .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .burger.active .line2 {
-        opacity: 0;
-    }
-
-    .burger.active .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .hero-meta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .results-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-results {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cta-buttons-large {
-        flex-direction: column;
-    }
-
-    .cta-box,
-    .offer-box {
-        padding: 3rem 2rem;
     }
 }
 

@@ -77,6 +77,7 @@ body {
     gap: 32px;
     padding: 64px 0 56px;
     align-items: start;
+    padding-top: 100px;
 }
 
 .eyebrow {
@@ -212,6 +213,19 @@ body {
     align-content: start;
 }
 
+.hero-photo {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface-2);
+}
+
+.hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .hero-card,
 .menu-panel,
 .feature-box,
@@ -253,7 +267,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    align-items: start;
+    align-items: center;
 }
 
 .story-points {
@@ -268,6 +282,20 @@ body {
 .visit-card span {
     display: block;
     font-family: Inter, "Segoe UI", sans-serif;
+}
+
+.story-image {
+    margin-top: 24px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface-2);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .menu-header {
@@ -340,10 +368,30 @@ body {
     padding: 32px 0 40px;
 }
 
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 32px;
+    align-items: center;
+}
+
 .quote blockquote {
     font-size: clamp(24px, 3.5vw, 42px);
     max-width: 880px;
     line-height: 1.25;
+}
+
+.quote-photo {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface-2);
+}
+
+.quote-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .visit-card {
@@ -370,7 +418,8 @@ body {
     .hero,
     .section-grid,
     .space-layout,
-    .visit-grid {
+    .visit-grid,
+    .quote-grid {
         grid-template-columns: 1fr;
     }
 
@@ -436,7 +485,7 @@ body {
     }
 
     .hero {
-        padding: 48px 0 40px;
+        padding: 120px 0 40px;
     }
 
     .hero h1 {

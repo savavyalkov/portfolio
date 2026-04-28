@@ -122,6 +122,7 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
+    padding-top: 80px;
 }
 
 .hero-bg {
@@ -680,8 +681,11 @@ body {
         left: 0;
     }
 
-    .hero {
-        padding: 100px 0 60px;
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .hero-text h2 {
@@ -720,6 +724,12 @@ body {
 
     .section {
         padding: 60px 0;
+    }
+
+    .top-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 }
 
