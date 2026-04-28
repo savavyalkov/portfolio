@@ -382,11 +382,26 @@ body {
     .topbar {
         grid-template-columns: 1fr;
         justify-items: start;
+        gap: 16px;
     }
 
     .topnav {
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .topbar-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 56px 0 48px;
+    }
+
+    .section {
+        padding: 48px 0;
     }
 }
 
@@ -399,16 +414,105 @@ body {
 
     .topbar {
         padding: 18px 12px;
+        grid-template-columns: 1fr;
     }
 
-    .hero-actions,
+    .brand {
+        font-size: 1.4rem;
+    }
+
+    .topnav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .topnav a {
+        font-size: 14px;
+    }
+
+    .topbar-cta {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 48px 0 40px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 8vw, 48px);
+        margin-bottom: 16px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 20px 0 14px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
     .hero-meta {
         flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
+    }
+
+    .hero-card {
+        padding: 18px;
+    }
+
+    .hero-card strong {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section h2 {
+        font-size: clamp(28px, 6vw, 36px);
     }
 
     .menu-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .menu-panel {
+        padding: 18px;
+    }
+
+    .menu-item {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .featured-panel strong {
+        font-size: 20px;
+    }
+
+    .quote {
+        padding: 28px 0 32px;
+    }
+
+    .quote blockquote {
+        font-size: clamp(20px, 5vw, 32px);
+    }
+
+    .visit-card {
+        padding: 18px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 15px;
     }
 }

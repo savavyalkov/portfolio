@@ -673,10 +673,15 @@ body {
         padding: 40px;
         transition: left 0.3s;
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        z-index: 999;
     }
 
     .menu.active {
         left: 0;
+    }
+
+    .hero {
+        padding: 100px 0 60px;
     }
 
     .hero-text h2 {
@@ -690,6 +695,7 @@ body {
     .story-grid,
     .reservation-box {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .menu-row {
@@ -710,5 +716,65 @@ body {
 
     .reservation-box {
         padding: 30px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 15px;
+    }
+
+    .hero {
+        padding: 80px 0 50px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .story-stats {
+        gap: 20px;
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+    }
+
+    .menu-item {
+        padding: 20px;
+    }
+
+    .benefit-card {
+        padding: 25px;
+    }
+
+    .reservation-box {
+        padding: 25px 20px;
+    }
+
+    .container {
+        padding: 0 15px;
     }
 }
